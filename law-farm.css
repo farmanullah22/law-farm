@@ -1,4 +1,7 @@
         /* Modern Reset */
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
         * {
             margin: 0;
             padding: 0;
@@ -19,7 +22,6 @@
             line-height: 1.6;
             color: var(--text);
             overflow-x: hidden;
-            font-family: 'poppins';
         }
 
         .container {
@@ -41,7 +43,7 @@
 
         .header.scrolled {
             background: var(--dark);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .header .container {
@@ -83,7 +85,7 @@
         .hero {
             min-height: 100vh;
             background: linear-gradient(rgba(44, 62, 80, 0.404), rgba(44, 62, 80, 0.404)),
-                        url("images/slider-images/slide-1.jpg") no-repeat center center/cover;
+                url("images/slider-images/slide-1.jpg") no-repeat center center/cover;
             display: flex;
             align-items: center;
             text-align: center;
@@ -92,7 +94,7 @@
         }
 
         .hero-content {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 2rem;
         }
@@ -101,9 +103,9 @@
             font-size: 3.5rem;
             margin-bottom: 1.5rem;
             font-size: 60px;
-            font-weight: 800;
+            font-weight: 600;
             height: 70px;
-            font-family: 'Merriweather', serif;
+            font-family: 'poppins';
             margin-top: 15rem;
 
         }
@@ -123,7 +125,8 @@
             border-radius: 10px;
             transition: all 0.3s ease;
             font-weight: 500;
-            border: 2px solid var(--secondary); ;
+            border: 2px solid var(--secondary);
+            ;
         }
 
         .btn:hover {
@@ -150,7 +153,7 @@
             padding: 2rem;
             background: white;
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease;
         }
 
@@ -232,7 +235,7 @@
 
         .area-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         .area-item h3 {
@@ -256,7 +259,7 @@
             background: white;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease;
         }
 
@@ -294,13 +297,15 @@
             flex: 1.5;
             padding-left: 50px;
             font-family: 'Times New Roman', serif;
-    
+
         }
 
         .form-group {
             margin: 20px 20px;
         }
-        .form-group input, .form-control  {
+
+        .form-group input,
+        .form-control {
             border: none;
             border-radius: 4px;
             margin-top: 5px;
@@ -324,6 +329,7 @@
             margin-left: 1.5em;
             color: #e67e22;
         }
+
         .form-control {
             width: 100%;
             padding: 12px;
@@ -351,12 +357,13 @@
 
         .contact-image img {
             width: 800px;
-            height: 100vh;
+            /* height: 100vh; */
             /* position: relative; */
             /* border: 2px solid red; */
         }
 
         @media (max-width: 768px) {
+
             .about-section,
             .contact-section {
                 flex-direction: column;
@@ -396,6 +403,7 @@
                 font-size: 2rem;
             }
         }
+
         /* testimonials */
         .testimonials-section {
             padding: 80px 0;
@@ -446,7 +454,7 @@
             padding: 30px;
             background: #fff;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .service-icon {
@@ -540,6 +548,7 @@
             flex: 1;
             overflow: hidden;
         }
+
         .why-choose-us-container .image-section img {
             width: auto;
             max-height: 680px;
@@ -572,7 +581,7 @@
             padding: 1.5rem;
             background: #fff;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .why-choose-us-container .service-icon {
