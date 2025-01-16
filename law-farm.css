@@ -494,3 +494,70 @@
             line-height: 1.6;
             font-size: 14px;
         }
+
+        /* why chose us */
+
+        .why-choose-us-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0rem;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .why-choose-us-container .image-section {
+            flex: 1;
+            overflow: hidden;
+        }
+        .why-choose-us-container .image-section img {
+            width: auto;
+            max-height: 680px;
+        }
+
+        .why-choose-us-container .content-section {
+            flex: 1;
+            padding: 1rem;
+        }
+
+        .why-choose-us-container .heading {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+        }
+
+        .why-choose-us-container .subtitle {
+            color: #7f8c8d;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        .why-choose-us-container .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .why-choose-us-container .service-card {
+            padding: 1.5rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .why-choose-us-container .service-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 1rem;
+            color: #e67e22;
+        }
+
+        .why-choose-us-container .service-title {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .why-choose-us-container .service-description {
+            color: #7f8c8d;
+            line-height: 1.5;
+        }
