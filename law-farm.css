@@ -12,7 +12,7 @@
         :root {
             --primary: #2c3e50;
             --secondary: #d88033;
-            --light: #ecf0f1;
+            --light: #ecf0f1da;
             --dark: #2c3e50;
             --text: #333;
         }
@@ -58,17 +58,17 @@
             color: var(--light);
             text-decoration: none;
             display: flex;
+            align-items: center;
         }
-        .mylogo {
-            width: 3em;
-            height: 3em;
+        .logo img{
+            width: 2.5em;
+            height: 2.5em;
             border-radius: 50%;
             background:none;
-            
+            filter: brightness(3);
         }
         .heading-logo {
-            margin-top: 0.5em;
-            margin-left: 1em;
+            padding-left: 10px;
         }
         .heading-letter {
             font-size: 39px;
@@ -157,7 +157,7 @@
         /* Modern Stats Section */
         .stats {
             background: var(--light);
-            padding: 5rem 0;
+            padding: 5rem 0 0 0;
         }
 
         .stats-grid {
@@ -184,6 +184,7 @@
             font-size: 3rem;
             color: var(--secondary);
             margin-bottom: 0.5rem;
+            font-weight: 400;
         }
 
         /* About Section */
@@ -237,51 +238,18 @@
             margin: 30px 0;
         }
 
-        /* Practice Areas */
-        .practice-areas {
-            padding: 5rem 0;
-            background: white;
-        }
+        /* service Areas */
 
         .service-text {
             font-family: 'Merriweather', serif;
         }
+
+        /* Attorneys Section */
+
         .section-title {
             text-align: center;
             margin-bottom: 3rem;
         }
-
-        .section-title h2 {
-            font-size: 2.5rem;
-            color: var(--dark);
-            margin-bottom: 1rem;
-        }
-
-        .areas-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .area-item {
-            background: var(--light);
-            padding: 2rem;
-            border-radius: 10px;
-            transition: all 0.3s ease;
-            text-align: left;
-        }
-
-        .area-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .area-item h3 {
-            color: var(--dark);
-            margin-bottom: 1rem;
-        }
-
-        /* Attorneys Section */
         .attorneys {
             padding: 5rem 0;
             background: var(--light);
@@ -294,6 +262,7 @@
         }
 
         .attorney-card {
+            height: fit-content;
             background: white;
             border-radius: 10px;
             overflow: hidden;
@@ -305,9 +274,9 @@
             transform: translateY(-5px);
         }
 
-        .attorney-img {
+        .attorney-img img {
             width: 100%;
-            height: 300px;
+            height: 400px;
             object-fit: cover;
         }
 
@@ -328,35 +297,41 @@
         /* Contact Section */
         .contact-section {
             width: 100%;
-            background: #f9f9f9;
             display: flex;
             align-items: center;
-            gap: 3em;
         }
 
         .contact-form {
+            padding: 50px;
             background: white;
             flex: 1.5;
-            padding-left: 50px;
             font-family: 'Times New Roman', serif;
-
+        }
+        .contact-form h2{
+            font-size: 2.5rem;
+            color: #333333;
+            font-weight: 100;
+            font-family: 'Merriweather', serif;
         }
 
         .form-group {
             margin: 20px 20px;
         }
 
-        .form-group input,
-        .form-control {
+        .form-group input, .form-group select,
+         .form-group textarea{
             border: none;
+            padding: 20px;
             border-radius: 4px;
             margin-top: 5px;
-            background-color: #33333310;
+            background-color: #33333307;
         }
 
-        .free-consul-text {
-            margin-left: 0.8em;
-            font-size: 34px;
+        .free-consul-text { 
+            font-size: 2.5rem;
+            margin-left: 1.6rem;
+            color: #333333;
+            font-weight: 100;
             font-family: 'Merriweather', serif;
         }
 
@@ -369,8 +344,12 @@
         }
 
         .free-consul-line {
-            margin-left: 1.5em;
-            color: #e67e22;
+            margin: 20px 0;
+            width: 200px;
+            height: 2px;
+            border: none;
+            margin-left: 1.6em;
+            background-color: #e67e22;
         }
 
         .form-control {
@@ -398,10 +377,10 @@
         }
 
         .contact-image img {
-            width: 800px;
-            /* height: 100vh; */
-            /* position: relative; */
-            /* border: 2px solid red; */
+            width: auto;
+            height: 100vh;
+            right: 150px;
+            position: relative;
         }
 
         @media (max-width: 768px) {
@@ -449,6 +428,7 @@
 
         /* testimonials */
         .testimonials-section {
+            height: 100vh;
             padding: 80px 0;
             text-align: center;
             background: #fff;
@@ -469,6 +449,8 @@
 
         .testimonial-text {
             font-family: 'Merriweather', serif;
+            font-weight: 200;
+            font-size: 2.5rem;
         }
 
         .testimonial-image {
@@ -478,37 +460,17 @@
             margin: 0 auto 20px;
             overflow: hidden;
         }
-
-        /* why chose us */
-        /* Services Section */
-        .services-section {
-            padding: 80px 0;
-            background: #f9f9f9;
+        .testimonial-card em, i{
+            font-size: 1.2rem;
+            color: #3333338f;
+            font-weight: 200;
+            font-family: sans-serif;
         }
-
-        .services-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-        }
-
-        .service-card {
-            padding: 30px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .service-icon {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 20px;
-            color: #d4af37;
+        .testimonial-card h4{
+            padding: 20px;
+            font-size: 1.2rem;
+            color: #333333d7;
+            font-weight: 500;
         }
 
         /* services */
@@ -526,7 +488,8 @@
 
         .services-heading h1 {
             color: #2c3e50;
-            font-size: 36px;
+            font-size: 2.4rem;
+            font-weight: 500;
             margin-bottom: 20px;
         }
 
@@ -556,16 +519,17 @@
 
         .service-area {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: flex-start;
             padding: 20px;
         }
 
         .icon {
             width: 50px;
-            height: 50px;
-            margin-bottom: 20px;
+            height: 60px;
+            margin-right: 20px;
             color: #e67e22;
+            
         }
 
         .service-area h3 {
@@ -604,6 +568,14 @@
         .why-choose-us-container .content-section {
             flex: 1;
             padding: 1rem;
+        }
+        .why-choose-us-container .content-section h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            font-weight: 200;
+            margin-bottom: 1.5rem;
+            font-family: 'Merriweather', serif;
+
         }
 
         .why-choose-us-container .heading {
