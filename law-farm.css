@@ -57,8 +57,22 @@
             font-weight: 700;
             color: var(--light);
             text-decoration: none;
+            display: flex;
         }
-
+        .mylogo {
+            width: 3em;
+            height: 3em;
+            border-radius: 50%;
+            background:none;
+            
+        }
+        .heading-logo {
+            margin-top: 0.5em;
+            margin-left: 1em;
+        }
+        .heading-letter {
+            font-size: 39px;
+        }
         .navbar {
             display: flex;
             align-items: center;
