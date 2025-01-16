@@ -1,221 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Law Firm Website</title>
     <style>
-        * {
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: system-ui, -apple-system, sans-serif;
+            padding: 20px;
         }
 
-        .container {
+        .services {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 40px 20px;
         }
 
-        /* About Section */
-        .about-section {
-            display: flex;
-            align-items: center;
-            padding: 80px 0;
-            background: #fff;
-        }
-
-        .about-image {
-            flex: 1;
-            padding-right: 50px;
-        }
-
-        .about-image img {
-            width: 100%;
-            max-width: 500px;
-            height: auto;
-        }
-
-        .about-content {
-            flex: 1;
-        }
-
-        .about-content h2 {
-            font-size: 2.5rem;
-            color: #333;
-            margin-bottom: 30px;
-        }
-
-        /* Services Section */
-        .services-section {
-            padding: 80px 0;
-            background: #f9f9f9;
-        }
-
-        .services-header {
+        .services-heading {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
         }
 
-        .services-grid {
+        .services-heading h1 {
+            color: #2c3e50;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .services-heading p {
+            color: #7f8c8d;
+            font-size: 16px;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-heading::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #e67e22;
+            margin: 30px auto 0;
+        }
+
+        .practice-areas {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            padding: 20px;
         }
 
-        .service-card {
-            padding: 30px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        .practice-area {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
         }
 
-        .service-icon {
+        .icon {
             width: 50px;
             height: 50px;
             margin-bottom: 20px;
-            color: #d4af37;
+            color: #e67e22;
         }
 
-        /* Testimonials Section */
-        .testimonials-section {
-            padding: 80px 0;
-            text-align: center;
-            background: #fff;
+        .practice-area h3 {
+            color: #2c3e50;
+            margin: 0 0 15px 0;
+            font-size: 20px;
         }
 
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-top: 50px;
+        .practice-area p {
+            color: #7f8c8d;
+            margin: 0;
+            line-height: 1.6;
+            font-size: 14px;
         }
-
-        .testimonial-card {
-            padding: 30px;
-            background: #f9f9f9;
-            border-radius: 8px;
-        }
-
-        .testimonial-image {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin: 0 auto 20px;
-            overflow: hidden;
-        }
-
-        
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- About Section -->
-        <section class="about-section">
-            <div class="about-image">
-                <img src="images/team images/team-4.png" alt="Legal Professional">
+    <div class="services">
+        <div class="services-heading">
+            <h1>Practice Areas</h1>
+            <p>Lorem ipsum dolor amet, consectetur adipisice eliteUsede eiusmod tempor incidide labeore dolore magna.</p>
+        </div>
+        
+        <div class="practice-areas">
+            <div class="practice-area">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v12m-6-6h12"/>
+                </svg>
+                <h3>Criminal Law</h3>
+                <p>Lorem ipsum dolor sit amet, conse adipise elit, sed eiusmod tempor incidide.</p>
             </div>
-            <div class="about-content">
-                <h2>About Our Firm</h2>
-                <p>We are dedicated to providing exceptional legal services with a commitment to excellence and integrity. Our experienced team of professionals works tirelessly to ensure the best possible outcomes for our clients.</p>
-            </div>
-        </section>
 
-        <!-- Services Section -->
-        <section class="services-section">
-            <div class="services-header">
-                <h2>Why Hire Us?</h2>
+            <div class="practice-area">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 21h18M3 7v14M21 7v14M6 7V4h12v3M9 21v-4h6v4"/>
+                </svg>
+                <h3>Real Estate Law</h3>
+                <p>Lorem ipsum dolor sit amet, conse adipise elit, sed eiusmod tempor incidide.</p>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">📚</div>
-                    <h3>Exclusively Areas</h3>
-                    <p>Specialized expertise in key legal areas ensuring focused and effective representation.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">👥</div>
-                    <h3>Group Of Lawyers</h3>
-                    <p>A diverse team of experienced attorneys working collaboratively for your success.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🏆</div>
-                    <h3>Cases Results</h3>
-                    <p>Proven track record of successful outcomes across various legal matters.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">⚖️</div>
-                    <h3>Experts In Law</h3>
-                    <p>Deep legal knowledge and expertise in handling complex cases.</p>
-                </div>
-            </div>
-        </section>
 
-        <!-- Testimonials Section -->
-        <section class="testimonials-section">
-            <h2>Clients Feedback</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-image">
-                        <img src="/api/placeholder/80/80" alt="Client">
-                    </div>
-                    <p>"Legal represented me on a very serious matter where I was looking at significant prison time. Immediately, I knew that I was in good hands."</p>
-                    <h4>Steve Martin</h4>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-image">
-                        <img src="/api/placeholder/80/80" alt="Client">
-                    </div>
-                    <p>"Legal represented me on a very serious matter where I was looking at significant prison time. Immediately, I knew that I was in good hands."</p>
-                    <h4>Maya Jonson</h4>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-image">
-                        <img src="/api/placeholder/80/80" alt="Client">
-                    </div>
-                    <p>"Legal represented me on a very serious matter where I was looking at significant prison time. Immediately, I knew that I was in good hands."</p>
-                    <h4>Mark Smith</h4>
-                </div>
+            <div class="practice-area">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 4v16m-8-8h16"/>
+                </svg>
+                <h3>Family Law</h3>
+                <p>Lorem ipsum dolor sit amet, conse adipise elit, sed eiusmod tempor incidide.</p>
             </div>
-        </section>
 
-        <!-- Contact Section -->
-        <section class="contact-section">
-            <div class="contact-form">
-                <h2>Free Consultation</h2>
-                <form id="consultationForm">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <select class="form-control" required>
-                            <option value="">Practice Area</option>
-                            <option value="criminal">Criminal Law</option>
-                            <option value="civil">Civil Law</option>
-                            <option value="corporate">Corporate Law</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" placeholder="Your Message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit">SEND REQUEST</button>
-                </form>
+            <div class="practice-area">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 16v-4m0-4h.01"/>
+                </svg>
+                <h3>International Law</h3>
+                <p>Lorem ipsum dolor sit amet, conse adipise elit, sed eiusmod tempor incidide.</p>
             </div>
-            <div class="contact-image">
-                <img src="/api/placeholder/500/600" alt="Consultation">
+
+            <div class="practice-area">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                    <path d="M12 8v8m-4-4h8"/>
+                </svg>
+                <h3>Financial Law</h3>
+                <p>Lorem ipsum dolor sit amet, conse adipise elit, sed eiusmod tempor incidide.</p>
             </div>
-        </section>
+
+            <div class="practice-area">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2"/>
+                    <path d="M8 21h8m-4-4v4"/>
+                </svg>
+                <h3>Technology Law</h3>
+                <p>Lorem ipsum dolor sit amet, conse adipise elit, sed eiusmod tempor incidide.</p>
+            </div>
+        </div>
     </div>
-
-    <script>
-        document.getElementById('consultationForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your submission. We will contact you shortly.');
-            this.reset();
-        });
-    </script>
 </body>
 </html>
