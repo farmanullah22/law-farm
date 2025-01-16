@@ -11,7 +11,7 @@
 
         :root {
             --primary: #2c3e50;
-            --secondary: #e67e22;
+            --secondary: #d88033;
             --light: #ecf0f1;
             --dark: #2c3e50;
             --text: #333;
@@ -85,10 +85,16 @@
         /* Modern Hero Section */
         .hero {
             min-height: 100vh;
+<<<<<<< Updated upstream
             width: 100%;
             background: linear-gradient(#333333b4, #333333b4),
+=======
+            min-width: 1500px;
+            background: linear-gradient(#333333b2, #333333ad),
+>>>>>>> Stashed changes
                 url("images/slider-images/slide-1.jpg") no-repeat top center/cover;
             display: flex;
+            right: 100px;
             align-items: center;
             text-align: center;
             color: var(--light);
@@ -102,28 +108,50 @@
         }
 
         .hero h1 {
+<<<<<<< Updated upstream
             font-size: 4rem;
             color: #fff;
             margin-bottom: 2.5rem;
             font-weight: 600;
             height: 70px;
             font-family: 'Merriweather', serif;
+=======
+            font-size: 3.5rem;
+            margin-bottom: 2.5rem;
+            font-size: 4rem;
+            font-weight: 600;
+            height: 70px;
+            font-family: 'poppins';
+>>>>>>> Stashed changes
             margin-top: 10rem;
 
         }
 
         .hero p {
+<<<<<<< Updated upstream
             font-size: 1.2rem;
             padding: 0 150px;
             margin-bottom: 3rem;
+=======
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            padding: 0px 80px;
+>>>>>>> Stashed changes
             opacity: 0.9;
         }
 
         .btn {
             display: inline-block;
+<<<<<<< Updated upstream
             padding: .8rem 1.5rem;
             margin-top: 10px;
             color: var(--secondary);
+=======
+            padding: 0.8rem 2.5rem;
+            margin-top: 10px;
+            font-size: 1.1rem;
+            color: var(--light);
+>>>>>>> Stashed changes
             text-decoration: none;
             border-radius: 10px;
             transition: all 0.3s ease;
